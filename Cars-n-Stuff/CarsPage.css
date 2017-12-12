@@ -1,0 +1,40 @@
+#button1 {
+    width: 90px;
+    height: 25px;
+}
+#button1:hover{
+    background-color: #ace883;
+}
+.transform{
+    position: relative;
+    background-color: grey;
+}
+#toyota {
+    background-color: blue;
+    height:100px;
+    width: 100px;
+    padding-top: 35px;
+    margin-top: 20px;
+    position:relative;
+
+}
+#tata{
+    background-color: red;
+    height:100px;
+    width: 100px;
+    padding-top: 35px;
+    margin-top: 20px;
+    position:relative ;
+}
+#tesla{
+    background-color: purple;
+    height:100px;
+    width: 100px;
+    padding-top: 35px;
+    margin-top: 20px;
+    position: relative;
+}
+
+div {
+    text-align: center;
+}
