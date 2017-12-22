@@ -1,0 +1,29 @@
+// let number = function random() {
+//   Math.floor(Math.random() * 10);
+//   return;
+// }
+
+let input = function(x) {
+  let p = prompt('Guess 1-10');
+  let response = parseInt(x);
+  console.log(response);
+}
+
+function game(response) {
+  let input = Math.floor(Math.random() * 10);
+  if (input === response) {
+    console.log('winner')
+  } else {
+    console.log('loser');
+    console.log(input);
+  }
+}
+
+
+function number(x) {
+  let p = prompt('Guess 1-10');
+  let response = parseInt(p);
+  return response;
+}
+
+game(number());
