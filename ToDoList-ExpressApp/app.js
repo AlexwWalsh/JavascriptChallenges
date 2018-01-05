@@ -70,6 +70,16 @@ app.post('/todo-list/:todoListId/todo/:id/delete', function(request, response){
   })
 })
 
+app.post('/todo-list/new', function(request , response){
+  TodoList.create({
+    name: request.body.name
+  }).then(function(todoList){
+    response.redirect("/")
+  }).catch(function(error){
+    response.senmd("Error, couldn't create Todo")
+  })
+});
+
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
